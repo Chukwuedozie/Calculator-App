@@ -1,0 +1,138 @@
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers span {
+  margin: 6px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  position: relative;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.theme-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.4rem;
+  column-gap: 10px;
+}
+
+.theme-switch {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 15px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.radios {
+  height: 15px;
+  width: 15px;
+}
+
+.checker {
+  width: 15px;
+  border-radius: 100%;
+  height: 15px;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input {
+  display: none;
+}
+input:checked + .checker {
+  opacity: 1;
+}
+
+.screen-container {
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.digits {
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 10px;
+  max-width: 95%;
+}
+
+.keypad-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 50px 50px 50px 50px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 87%;
+  justify-content: center;
+}
+.keypad-container div {
+  display: flex;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.keypad-container div:hover {
+  transform: scaleY(0.9);
+}
+
+.item4 {
+  font-size: 1rem;
+}
+.item17 {
+  grid-column: 1/3;
+}
+
+.item18 {
+  grid-column: 3/5;
+}
+
+@media screen and (max-width: 300px) {
+  .header-container {
+    width: 180px;
+  }
+  .screen-container {
+    width: 64%;
+  }
+  .keypad-container {
+    grid-template-columns: 35px 35px 35px 35px;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    width: 50%;
+    gap: 10px;
+  }
+  .digits {
+    font-size: 1.1rem;
+  }
+}

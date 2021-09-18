@@ -1,0 +1,64 @@
+:root {
+  --body-back_3: hsl(268, 75%, 9%);
+  --white-text_3: white;
+  --keypad-themeswitch-back_3: hsl(268, 71%, 12%);
+  --checkercol-item18back_3: hsl(176, 100%, 44%);
+  --screen-back_3: hsl(268, 71%, 12%);
+  --key-back_3: hsl(268, 47%, 21%);
+  --keynumbers-col_3: hsl(52, 100%, 62%);
+  --key-shadow_3: hsl(290, 70%, 36%);
+  --item4-item17back_3: hsl(281, 89%, 26%);
+  --item4-item17shadow_3: hsl(285, 91%, 52%);
+  --item18-shadow_3: hsl(177, 92%, 70%);
+  --Equals_3: hsl(198, 20%, 13%);
+}
+
+body {
+  background-color: var(--body-back_3);
+}
+
+.header-container {
+  color: var(--keynumbers-col_3);
+}
+
+.theme-switch {
+  background-color: var(--keypad-themeswitch-back_3);
+}
+
+.checker {
+  background-color: var(--checkercol-item18back_3);
+}
+
+.screen-container {
+  background-color: var(--screen-back_3);
+}
+
+.results {
+  color: var(--keynumbers-col_3);
+}
+
+.keypad-container {
+  background-color: var(--keypad-themeswitch-back_3);
+}
+
+.item {
+  background-color: var(--key-back_3);
+  color: var(--keynumbers-col_3);
+  box-shadow: 0px 2px var(--key-shadow_3);
+}
+.item4 {
+  background-color: var(--item4-item17back_3);
+  color: var(--white_3);
+  box-shadow: 0px 2px var(--item4-item17shadow_3);
+}
+.item17 {
+  background-color: var(--item4-item17back_3);
+  color: var(--white_3);
+  box-shadow: 0px 2px var(--item4-item17shadow_3);
+}
+
+.item18 {
+  background-color: var(--checkercol-item18back_3);
+  color: var(--Equals_3);
+  box-shadow: 0px 2px var(--item18-shadow_3);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+   <title>Calculator app</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/theme1.css" id="theme-id">
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="calc-container">
+      <div class="calc-top">
+        <div class="header-container">
+          <h3>calc</h3>
+          <div class="theme-container">
+            <p>THEME</p>
+            <div class="numbsandrads">
+              <div class="numbers" >
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+            
+              <div class="theme-switch">
+                <label class="radios" for="radio1">
+                  <input type="radio" name="rad" id="radio1" value="1" checked>
+                  <span class="checker"></span>
+                </label>
+                
+                <label class="radios" for="radio2">
+                  <input type="radio" name="rad" id="radio2" value="2">
+                  <span class="checker"></span>
+                </label>
+                
+                <label class="radios" for="radio3">
+                  <input type="radio" name="rad" id="radio3" value="3">
+                  <span class="checker"></span>
+                </label>
+                
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+  
+      
+        
+      <div class="screen-container">
+        <div class="digits">0</div>
+      </div>
+  
+  
+      <div class="keypad-container">
+        <div class="item1 item bt">7</div>
+        <div class="item2 item bt">8</div>
+        <div class="item3 item bt">9</div>
+        <div class="item4 bt">DEL</div>
+        <div class="item5 item bt">4</div>
+        <div class="item6 item bt">5</div>
+        <div class="item7 item bt">6</div>
+        <div class="item8 item bt">+</div>
+        <div class="item9 item bt">1</div>
+        <div class="item10 item bt">2</div>
+        <div class="item11 item bt">3</div>
+        <div class="item12 item bt">-</div>
+        <div class="item13 item bt">.</div>
+        <div class="item14 item bt">0</div>
+        <div class="item15 item bt">/</div>
+        <div class="item16 item bt">*</div>
+        <div class="item17 bt">RESET</div>
+        <div class="item18 bt">=</div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
